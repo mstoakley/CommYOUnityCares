@@ -9,7 +9,18 @@ import SwiftUI
 
 struct SideMenuHeaderView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            Image(systemName: "person.circle.fill")
+                .imageScale(.large)
+                .foregroundStyle(.white)
+                .frame(width: 48, height: 48)
+                .background(.blue)
+                .clipShape(RoundedRectangle(cornerRadius: 10))
+                .padding(.vertical)
+            VStack(alignment: .leading, spacing: 6){
+                Text("Finn Mertens")
+            }
+        }
     }
 }
 

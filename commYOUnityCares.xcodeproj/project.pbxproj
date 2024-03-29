@@ -14,6 +14,12 @@
 		EB5DED562BB665DA0080DDD7 /* commYOUnityCaresTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5DED552BB665DA0080DDD7 /* commYOUnityCaresTests.swift */; };
 		EB5DED602BB665DA0080DDD7 /* commYOUnityCaresUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5DED5F2BB665DA0080DDD7 /* commYOUnityCaresUITests.swift */; };
 		EB5DED622BB665DA0080DDD7 /* commYOUnityCaresUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5DED612BB665DA0080DDD7 /* commYOUnityCaresUITestsLaunchTests.swift */; };
+		EB5DED6F2BB666AE0080DDD7 /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5DED6E2BB666AE0080DDD7 /* SideMenu.swift */; };
+		EB5DED712BB666E40080DDD7 /* SideMenuRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5DED702BB666E40080DDD7 /* SideMenuRowView.swift */; };
+		EB5DED732BB667FC0080DDD7 /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5DED722BB667FC0080DDD7 /* SideMenuView.swift */; };
+		EB5DED752BB670980080DDD7 /* SideMenuOptionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5DED742BB670980080DDD7 /* SideMenuOptionModel.swift */; };
+		EB5DED772BB670D00080DDD7 /* SideMenuHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5DED762BB670D00080DDD7 /* SideMenuHeaderView.swift */; };
+		EB5DED792BB671290080DDD7 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5DED782BB671290080DDD7 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +50,12 @@
 		EB5DED5B2BB665DA0080DDD7 /* commYOUnityCaresUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = commYOUnityCaresUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB5DED5F2BB665DA0080DDD7 /* commYOUnityCaresUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = commYOUnityCaresUITests.swift; sourceTree = "<group>"; };
 		EB5DED612BB665DA0080DDD7 /* commYOUnityCaresUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = commYOUnityCaresUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EB5DED6E2BB666AE0080DDD7 /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
+		EB5DED702BB666E40080DDD7 /* SideMenuRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuRowView.swift; sourceTree = "<group>"; };
+		EB5DED722BB667FC0080DDD7 /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
+		EB5DED742BB670980080DDD7 /* SideMenuOptionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuOptionModel.swift; sourceTree = "<group>"; };
+		EB5DED762BB670D00080DDD7 /* SideMenuHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuHeaderView.swift; sourceTree = "<group>"; };
+		EB5DED782BB671290080DDD7 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +108,12 @@
 			children = (
 				EB5DED442BB665C90080DDD7 /* commYOUnityCaresApp.swift */,
 				EB5DED462BB665C90080DDD7 /* ContentView.swift */,
+				EB5DED6E2BB666AE0080DDD7 /* SideMenu.swift */,
+				EB5DED722BB667FC0080DDD7 /* SideMenuView.swift */,
+				EB5DED742BB670980080DDD7 /* SideMenuOptionModel.swift */,
+				EB5DED702BB666E40080DDD7 /* SideMenuRowView.swift */,
+				EB5DED762BB670D00080DDD7 /* SideMenuHeaderView.swift */,
+				EB5DED782BB671290080DDD7 /* SettingsView.swift */,
 				EB5DED482BB665D90080DDD7 /* Assets.xcassets */,
 				EB5DED4A2BB665D90080DDD7 /* Preview Content */,
 			);
@@ -257,6 +275,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB5DED6F2BB666AE0080DDD7 /* SideMenu.swift in Sources */,
+				EB5DED792BB671290080DDD7 /* SettingsView.swift in Sources */,
+				EB5DED772BB670D00080DDD7 /* SideMenuHeaderView.swift in Sources */,
+				EB5DED712BB666E40080DDD7 /* SideMenuRowView.swift in Sources */,
+				EB5DED752BB670980080DDD7 /* SideMenuOptionModel.swift in Sources */,
+				EB5DED732BB667FC0080DDD7 /* SideMenuView.swift in Sources */,
 				EB5DED472BB665C90080DDD7 /* ContentView.swift in Sources */,
 				EB5DED452BB665C90080DDD7 /* commYOUnityCaresApp.swift in Sources */,
 			);

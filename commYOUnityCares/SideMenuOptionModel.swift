@@ -6,3 +6,40 @@
 //
 
 import Foundation
+enum SideMenuOptionModel: Int, CaseIterable{
+    case settings
+    case profile
+    case logout
+    case home
+    
+    var title: String{
+        switch self{
+        case .home:
+            return "Home"
+        case .profile:
+            return "Profile"
+        case .logout:
+            return "Logout"
+        case .settings:
+            return "Settings"
+        }
+    }
+    
+    var systemImageName: String{
+        switch self{
+        case .home:
+            return "house"
+        case .profile:
+            return "person"
+        case .logout:
+            return "rectangle.portrait.and.arrow.right"
+        case .settings:
+            return "gear"
+        }
+    }
+}
+extension SideMenuOptionModel: Identifiable{
+    var id: Int {
+        return self.rawValue
+    }
+}

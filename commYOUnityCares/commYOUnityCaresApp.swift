@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct commYOUnityCaresApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
+    @AppStorage("isDarkModeEnabled") private var isDarkModeEnabled = false
+        var body: some Scene {
+            WindowGroup {
+                ContentView()
+                    .environment(\.colorScheme, isDarkModeEnabled ? .dark : .light)
+            }
         }
-    }
 }
