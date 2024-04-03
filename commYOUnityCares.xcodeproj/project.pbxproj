@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49AEE64B2BB7198B008372A4 /* CommunityMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AEE64A2BB7198B008372A4 /* CommunityMapView.swift */; };
 		EB5DED452BB665C90080DDD7 /* commYOUnityCaresApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5DED442BB665C90080DDD7 /* commYOUnityCaresApp.swift */; };
 		EB5DED472BB665C90080DDD7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5DED462BB665C90080DDD7 /* ContentView.swift */; };
 		EB5DED492BB665D90080DDD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB5DED482BB665D90080DDD7 /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		49AEE64A2BB7198B008372A4 /* CommunityMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityMapView.swift; sourceTree = "<group>"; };
 		EB5DED412BB665C90080DDD7 /* commYOUnityCares.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = commYOUnityCares.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB5DED442BB665C90080DDD7 /* commYOUnityCaresApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = commYOUnityCaresApp.swift; sourceTree = "<group>"; };
 		EB5DED462BB665C90080DDD7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 				EB5DED702BB666E40080DDD7 /* SideMenuRowView.swift */,
 				EB5DED762BB670D00080DDD7 /* SideMenuHeaderView.swift */,
 				EB5DED782BB671290080DDD7 /* SettingsView.swift */,
+				49AEE64A2BB7198B008372A4 /* CommunityMapView.swift */,
 				EB5DED482BB665D90080DDD7 /* Assets.xcassets */,
 				EB5DED4A2BB665D90080DDD7 /* Preview Content */,
 			);
@@ -283,6 +286,7 @@
 				EB5DED732BB667FC0080DDD7 /* SideMenuView.swift in Sources */,
 				EB5DED472BB665C90080DDD7 /* ContentView.swift in Sources */,
 				EB5DED452BB665C90080DDD7 /* commYOUnityCaresApp.swift in Sources */,
+				49AEE64B2BB7198B008372A4 /* CommunityMapView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
