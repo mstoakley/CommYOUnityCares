@@ -40,6 +40,7 @@ struct SideMenuView: View {
                     .frame(width:270,alignment: .leading)
                     .background(.white)
                     
+                    
                     Spacer()
                 }
                 .transition(.move(edge: .leading))
@@ -48,7 +49,7 @@ struct SideMenuView: View {
         }
         
         .animation(.easeInOut, value:isShowing)
-        .environment(\.colorScheme, isDarkModeEnabled ? .dark : .light)
+        
     }
     private func onOptionTapped(_ option: SideMenuOptionModel){
         selectedOption = option

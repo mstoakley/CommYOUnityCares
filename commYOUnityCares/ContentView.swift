@@ -14,14 +14,16 @@ struct ContentView: View {
         NavigationStack{
             ZStack{
                 TabView(selection:$selectedTab){
-                    SettingsView()//include settings page instead of text
+                    
+                    Text("Home")
+                        .tag(3)
+                    SettingsView()
                         .tag(0)
                     Text("Profile")// include profile page
                         .tag(1)
                     Text("Logout")//some sort of function so you logout and are brought to login page
                         .tag(2)
-                    Text("Home")//include home page
-                        .tag(3)
+                    
                 }
                 SideMenuView(isShowing: $showMenu, selectedTab: $selectedTab)
                 .padding()
