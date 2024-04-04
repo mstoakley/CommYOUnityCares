@@ -48,6 +48,9 @@ struct ContentView: View {
                 Image(systemName: "map")
                 Text("Finder")
             }
+            SplitPgView().tabItem { 
+                Image(systemName: "hands")
+                Text("Help")}
         }
     }
 }

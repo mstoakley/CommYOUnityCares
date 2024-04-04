@@ -51,7 +51,6 @@ struct CommunityMapView: View {
                         }
                 }
             }
-            Spacer()
         }
     }
     
