@@ -6,3 +6,24 @@
 //
 
 import Foundation
+import UIKit
+
+
+
+class PostViewController: UIViewController
+
+{
+    @IBOutlet var collectionView: UICollectionView!
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
+}
+
+
+extension PostViewController: UICollectionViewDelegate 
+{
+    
+}
+extension PostViewController: UICollectionViewDataSource {}
+extension PostViewController: UICollectionViewDelegateFlowLayout {}
