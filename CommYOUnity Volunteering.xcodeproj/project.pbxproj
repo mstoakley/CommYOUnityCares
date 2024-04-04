@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13668EC12BAE15F70074E107 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13668EC02BAE15F70074E107 /* PostView.swift */; };
+		136B8C0B2BBD04D20040433A /* PostCollectionCellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136B8C092BBD04D20040433A /* PostCollectionCellCollectionViewCell.swift */; };
+		136B8C0C2BBD04D20040433A /* PostCollectionCellCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 136B8C0A2BBD04D20040433A /* PostCollectionCellCollectionViewCell.xib */; };
 		139B6E572B951572004A3A69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139B6E562B951572004A3A69 /* AppDelegate.swift */; };
 		139B6E592B951572004A3A69 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139B6E582B951572004A3A69 /* SceneDelegate.swift */; };
 		139B6E5B2B951572004A3A69 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139B6E5A2B951572004A3A69 /* ViewController.swift */; };
@@ -36,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		13668EC02BAE15F70074E107 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		136B8C092BBD04D20040433A /* PostCollectionCellCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCollectionCellCollectionViewCell.swift; sourceTree = "<group>"; };
+		136B8C0A2BBD04D20040433A /* PostCollectionCellCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostCollectionCellCollectionViewCell.xib; sourceTree = "<group>"; };
 		139B6E532B951572004A3A69 /* CommYOUnity Volunteering.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CommYOUnity Volunteering.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		139B6E562B951572004A3A69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		139B6E582B951572004A3A69 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +112,9 @@
 				139B6E5F2B951577004A3A69 /* Assets.xcassets */,
 				139B6E612B951577004A3A69 /* LaunchScreen.storyboard */,
 				139B6E642B951577004A3A69 /* Info.plist */,
+				13668EC02BAE15F70074E107 /* PostView.swift */,
+				136B8C092BBD04D20040433A /* PostCollectionCellCollectionViewCell.swift */,
+				136B8C0A2BBD04D20040433A /* PostCollectionCellCollectionViewCell.xib */,
 			);
 			path = "CommYOUnity Volunteering";
 			sourceTree = "<group>";
@@ -191,7 +200,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1520;
 				TargetAttributes = {
 					139B6E522B951572004A3A69 = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -233,6 +242,7 @@
 			files = (
 				139B6E632B951577004A3A69 /* LaunchScreen.storyboard in Resources */,
 				139B6E602B951577004A3A69 /* Assets.xcassets in Resources */,
+				136B8C0C2BBD04D20040433A /* PostCollectionCellCollectionViewCell.xib in Resources */,
 				139B6E5E2B951572004A3A69 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,6 +270,8 @@
 			files = (
 				139B6E5B2B951572004A3A69 /* ViewController.swift in Sources */,
 				139B6E572B951572004A3A69 /* AppDelegate.swift in Sources */,
+				136B8C0B2BBD04D20040433A /* PostCollectionCellCollectionViewCell.swift in Sources */,
+				13668EC12BAE15F70074E107 /* PostView.swift in Sources */,
 				139B6E592B951572004A3A69 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -352,6 +364,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -366,7 +379,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -412,6 +425,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -420,7 +434,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -439,11 +453,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "CommYOUnity Volunteering/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = CommYOUnity;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -466,11 +482,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "CommYOUnity Volunteering/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = CommYOUnity;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
