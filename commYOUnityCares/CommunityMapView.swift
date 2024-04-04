@@ -22,8 +22,10 @@ struct CommunityMapView: View {
     
     let places: [Place] = [
         Place(name: "Prairie View A&M University", coordinate: CLLocationCoordinate2D(latitude: 30.0954, longitude: -95.9875)),
-        Place(name: "Community Center 1",coordinate: CLLocationCoordinate2D(latitude: 30.0820, longitude: -95.9774)),
-        Place(name: "Community Center 2", coordinate: CLLocationCoordinate2D(latitude: 30.0854, longitude: -95.9796)),
+        Place(name: "Hempstead Recreational Center", coordinate: CLLocationCoordinate2D(latitude: 30.0928, longitude: -96.0611)),
+        Place(name: "Waller County Community Center", coordinate: CLLocationCoordinate2D(latitude: 30.0883, longitude: -95.9932)),
+        Place(name: "Waller Civic Center", coordinate: CLLocationCoordinate2D(latitude: 30.0200, longitude: -95.9317)),
+        Place(name: "Fields Store Community Center", coordinate: CLLocationCoordinate2D(latitude: 30.1660, longitude: -95.9242)),
         // Add more community centers as needed
     ]
     
