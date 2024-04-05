@@ -10,36 +10,68 @@ import SwiftUI
 struct ContentView: View {
     @State private var showMenu = false
     @State private var selectedTab = 0
+    @State private var isLoggedIn = true
+    
     var body: some View {
-        NavigationStack{
-            ZStack{
-                TabView(selection:$selectedTab){
-                    SettingsView()//include settings page instead of text
-                        .tag(0)
-                    Text("Profile")// include profile page
-                        .tag(1)
-                    Text("Logout")//some sort of function so you logout and are brought to login page
-                        .tag(2)
-                    Text("Home")//include home page
-                        .tag(3)
-                }
-                SideMenuView(isShowing: $showMenu, selectedTab: $selectedTab)
-                .padding()
+        TabView {
+            VStack {
+                CommunityMapView()
             }
-            .toolbar(showMenu ? .hidden: .visible ,for:.navigationBar)
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbar{
-                ToolbarItem(placement: .topBarLeading){
-                    Button(action:{
-                        showMenu.toggle()
-                    }, label:{
-                        Image(systemName: "line.3.horizontal")
-                    })
+            .tabItem {
+                Image(systemName: "map")
+                Text("Finder")
+            }
+            VStack {
+                HomeView()
+            }
+            .tabItem {
+                Image(systemName: "house")
+                Text("Home")
+            }
+            NavigationStack {
+                ZStack {
+                    TabView(selection: $selectedTab) {
+                        Text("Profile")
+                            .tag(1)
+                        Text("Student Hub")
+                            .tag(2)
+                        SettingsView()
+                            .tag(0)
+                        SplitPgView()
+                            .tag(3)
+                    }
+                    SideMenuView(isShowing: $showMenu, selectedTab: $selectedTab)
+                        .padding()
                 }
+                .toolbar(showMenu ? .hidden : .visible, for: .navigationBar)
+                .navigationBarTitleDisplayMode(.inline)
+                .toolbar {
+                    ToolbarItem(placement: .topBarLeading) {
+                        Button(action: {
+                            showMenu.toggle()
+                        }) {
+                            Image(systemName: "line.3.horizontal")
+                        }
+                    }
+                }
+            }
+            .tabItem {
+                Image(systemName: "person")
+                Text("Profile")
             }
         }
     }
+    
+    func logout() {
+        // Perform logout actions
+        // For example:
+        isLoggedIn = false // Set isLoggedIn to false to show the LoginView
+    }
 }
+    
+   
+        
+
 #Preview {
     ContentView()
 }

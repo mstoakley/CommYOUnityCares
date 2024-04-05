@@ -7,34 +7,37 @@
 
 import Foundation
 enum SideMenuOptionModel: Int, CaseIterable{
+ 
     case settings
     case profile
-    case logout
-    case home
+    case studenthub
+    case help
+    
     
     var title: String{
         switch self{
-        case .home:
-            return "Home"
+       
         case .profile:
             return "Profile"
-        case .logout:
-            return "Logout"
+        case .studenthub:
+            return "Student Hub"
         case .settings:
             return "Settings"
+        case .help:
+            return "Help"
         }
     }
     
     var systemImageName: String{
         switch self{
-        case .home:
-            return "house"
         case .profile:
             return "person"
-        case .logout:
-            return "rectangle.portrait.and.arrow.right"
+        case .studenthub:
+            return "pencil"
         case .settings:
             return "gear"
+        case .help:
+            return "hand.raised"
         }
     }
 }

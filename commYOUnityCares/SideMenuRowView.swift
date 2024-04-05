@@ -36,5 +36,5 @@ struct SideMenuRowView: View {
    
 
 #Preview {
-    SideMenuRowView(option: .home,selectedOption: .constant(.home))
+    SideMenuRowView(option: .settings,selectedOption: .constant(.settings))
 }
