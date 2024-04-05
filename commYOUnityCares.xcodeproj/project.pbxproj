@@ -119,8 +119,8 @@
 			children = (
 				EB5DED442BB665C90080DDD7 /* commYOUnityCaresApp.swift */,
 				030D79D82BB74E2C00FA825E /* LogInView.swift */,
-				EB5DED462BB665C90080DDD7 /* ContentView.swift */,
 				034069D12BBF6E1B006762AA /* Now!.png */,
+				EB5DED462BB665C90080DDD7 /* ContentView.swift */,
 				EB5DED6E2BB666AE0080DDD7 /* SideMenu.swift */,
 				EB5DED722BB667FC0080DDD7 /* SideMenuView.swift */,
 				EB5DED742BB670980080DDD7 /* SideMenuOptionModel.swift */,
