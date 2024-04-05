@@ -7,10 +7,10 @@
 
 import Foundation
 enum SideMenuOptionModel: Int, CaseIterable{
-    case home
+ 
     case settings
     case profile
-    case logout
+    case studenthub
     
     
     var title: String{
@@ -18,7 +18,7 @@ enum SideMenuOptionModel: Int, CaseIterable{
        
         case .profile:
             return "Profile"
-        case .logout:
+        case .studenthub:
             return "Student Hub"
         case .settings:
             return "Settings"
@@ -29,7 +29,7 @@ enum SideMenuOptionModel: Int, CaseIterable{
         switch self{
         case .profile:
             return "person"
-        case .logout:
+        case .studenthub:
             return "pencil"
         case .settings:
             return "gear"

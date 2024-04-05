@@ -11,67 +11,66 @@ struct ContentView: View {
     @State private var showMenu = false
     @State private var selectedTab = 0
     @State private var isLoggedIn = true
+    
     var body: some View {
-        if isLoggedIn {
-                 loggedInContent()
-             } else {
-                 LogInView()
-             }
-         }
-         
-    func loggedInContent() -> some View{
-    TabView{
-            NavigationStack{
-                ZStack{
-                    TabView(selection:$selectedTab){
-                        
-                        Text("Student Hub")//whoops
+        TabView {
+            NavigationStack {
+                ZStack {
+                    TabView(selection: $selectedTab) {
+                        Text("Student Hub") // whoops
                             .tag(3)
                         SettingsView()
                             .tag(0)
-                        Text("Profile")// include profile page
+                        Text("Profile") // include profile page
                             .tag(1)
-                       
-                        
                     }
                     SideMenuView(isShowing: $showMenu, selectedTab: $selectedTab)
                         .padding()
                 }
-                .toolbar(showMenu ? .hidden: .visible ,for:.navigationBar)
+                .toolbar(showMenu ? .hidden : .visible, for: .navigationBar)
                 .navigationBarTitleDisplayMode(.inline)
-                .toolbar{
-                    ToolbarItem(placement: .topBarLeading){
-                        Button(action:{
+                .toolbar {
+                    ToolbarItem(placement: .topBarLeading) {
+                        Button(action: {
                             showMenu.toggle()
-                        }, label:{
+                        }) {
                             Image(systemName: "line.3.horizontal")
-                        })
+                        }
                     }
-            }.tabItem {
+                }
+            }
+            .tabItem {
                 Image(systemName: "house")
                 Text("Home")
             }
-            VStack{
+            
+            VStack {
                 CommunityMapView()
-            }.tabItem {
+            }
+            .tabItem {
                 Image(systemName: "map")
                 Text("Finder")
             }
-            VStack{
+            
+            VStack {
                 SplitPgView()
-            }.tabItem {
+            }
+            .tabItem {
                 Image(systemName: "person.3")
                 Text("Help")
             }
         }
     }
+    
     func logout() {
-           // Perform logout actions
-           // For example:
-           isLoggedIn = false // Set isLoggedIn to false to show the LoginView
-       }
+        // Perform logout actions
+        // For example:
+        isLoggedIn = false // Set isLoggedIn to false to show the LoginView
+    }
 }
-
+    
+   
+        
 
 #Preview {
     ContentView()
