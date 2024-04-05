@@ -22,7 +22,7 @@ struct HelpPgView: View {
                     Section(header: Text("Donations")){
                         Toggle("Food Assitance",isOn: $needFood)
                         Toggle("Clothing Assistance",isOn: $needClothing)
-                        Toggle("Money Assistance", isOn: $needMoney)
+                        Toggle("Financial Assistance", isOn: $needMoney)
                     }
                 }
                 Button(action: { save()

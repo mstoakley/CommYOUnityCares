@@ -20,7 +20,7 @@ struct StudentFormView: View {
             VStack {
                 Spacer()
                 
-                Text("Fill out the form below to inform your school of your need for assistance:")
+                Text("Are you a student in need?\n\nFill out the form below to inform your school of your need for assistance:")
                     .font(.headline)
                     .padding(.horizontal)
                 

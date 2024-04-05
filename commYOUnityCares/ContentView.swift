@@ -10,11 +10,19 @@ import SwiftUI
 struct ContentView: View {
     @State private var showMenu = false
     @State private var selectedTab = 0
-    @State private var selectedItem = 1
     @State private var isLoggedIn = true
     
+    var tabName: String {
+            switch selectedTab {
+                case 0: return "Profile"
+                case 1: return "Student Hub"
+                case 2: return "Help"
+                default: return "Settings"
+            }
+        }
+    
     var body: some View {
-        TabView (selection: $selectedItem) {
+        TabView {
             VStack {
                 HomeView()
             }
@@ -45,6 +53,7 @@ struct ContentView: View {
                         .padding()
                 }
                 .toolbar(showMenu ? .hidden : .visible, for: .navigationBar)
+                .navigationTitle(tabName)
                 .navigationBarTitleDisplayMode(.inline)
                 .toolbar {
                     ToolbarItem(placement: .topBarLeading) {

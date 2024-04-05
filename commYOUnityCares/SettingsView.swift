@@ -42,7 +42,7 @@ struct SettingsView: View {
                         ZStack {
                             RoundedRectangle(cornerRadius: 8)
                                 .foregroundColor(.red) // Use a red background
-
+                            
                             Text("Logout")
                                 .foregroundColor(.white) // White text
                                 .frame(maxWidth: .infinity) // Make the button's width fill the space
@@ -50,11 +50,10 @@ struct SettingsView: View {
                     }
                     .frame(height: 44) // Set the height of the button
                     .listRowInsets(EdgeInsets()) // Remove the default padding of the list row
-
+                    
                     
                 }
             }
-            .navigationBarTitle("Settings")
             
         }
     }

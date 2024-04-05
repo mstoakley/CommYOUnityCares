@@ -9,13 +9,21 @@ import SwiftUI
 
 struct SplitPgView: View {
     var body: some View {
-            VStack{
-                Label("Do you need help?", systemImage: "1.circle")
-                NavigationLink("Yes", destination: HelpPgView())
-                Label("Do you want to help?", systemImage: "2.circle")
-                NavigationLink("Yes", destination: VolPgView())
+        NavigationView{
+            NavigationView{
+                Form {
+                    Section(header: Text("Need Help?")) {
+                        NavigationLink("Assistance Form", destination: HelpPgView())
+                    }
+                    
+                    Section(header: Text("Want To Help?")) {
+                        NavigationLink("Volunteer Form", destination: VolPgView())
+                    }
+                }
                 
             }
+            Spacer()
+        }
             
     }
 }
