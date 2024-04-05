@@ -10,20 +10,28 @@ import SwiftUI
 struct ContentView: View {
     @State private var showMenu = false
     @State private var selectedTab = 0
+    @State private var isLoggedIn = true
     var body: some View {
-        TabView{
+        if isLoggedIn {
+                 loggedInContent()
+             } else {
+                 LogInView()
+             }
+         }
+         
+    func loggedInContent() -> some View{
+    TabView{
             NavigationStack{
                 ZStack{
                     TabView(selection:$selectedTab){
                         
-                        Text("Home")
+                        Text("Student Hub")//whoops
                             .tag(3)
                         SettingsView()
                             .tag(0)
                         Text("Profile")// include profile page
                             .tag(1)
-                        Text("Logout")//some sort of function so you logout and are brought to login page
-                            .tag(2)
+                       
                         
                     }
                     SideMenuView(isShowing: $showMenu, selectedTab: $selectedTab)
@@ -39,21 +47,34 @@ struct ContentView: View {
                             Image(systemName: "line.3.horizontal")
                         })
                     }
+                    ToolbarItem(placement: .topBarTrailing){
+                        Button(action:{ logout() }) {
+                            Text("Logout")
+                        }
+                    }
                 }
             }
             SettingsView().tabItem {
                 Image(systemName: "gear")
                 Text("Settings")}
+            
             CommunityMapView().tabItem {
                 Image(systemName: "map")
                 Text("Finder")
             }
-            SplitPgView().tabItem { 
-                Image(systemName: "hands")
+            SplitPgView().tabItem {
+                Image(systemName: "hand")
                 Text("Help")}
         }
     }
+    func logout() {
+           // Perform logout actions
+           // For example:
+           isLoggedIn = false // Set isLoggedIn to false to show the LoginView
+       }
 }
+
+
 #Preview {
     ContentView()
 }

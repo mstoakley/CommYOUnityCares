@@ -48,7 +48,7 @@ struct SideMenuView: View {
             
         }
         
-        .animation(.easeInOut, value:isShowing)
+        .animation(.easeInOut(duration: 0.3), value:isShowing)
         
     }
     private func onOptionTapped(_ option: SideMenuOptionModel){

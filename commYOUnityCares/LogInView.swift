@@ -10,8 +10,21 @@ import SwiftUI
   
 
 struct LogInView: View {
+    @State private var isLoggedIn = false 
+   
     var body: some View {
-        VStack(alignment: .center) {
+            Group {
+                if !isLoggedIn {
+                    loginForm
+                } else {
+                    ContentView()
+                }
+            }
+            
+        }
+         
+    var loginForm: some View {
+    VStack(alignment: .center) {
              
             Text("CommYOUnity Cares")
                 .font(.largeTitle)
@@ -42,10 +55,9 @@ struct LogInView: View {
                 .font(.title2)
                 .padding()
             Spacer()
-            Button("Sign In") {
-               
-                /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
-                
+            
+            Button(action:{ isLoggedIn = true }) {
+                Text("Sign In")
             }
 
             .font(.title)
@@ -57,8 +69,6 @@ struct LogInView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+#Preview{
+    LogInView()
 }

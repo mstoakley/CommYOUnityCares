@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		030D79D92BB74E2C00FA825E /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030D79D82BB74E2C00FA825E /* LogInView.swift */; };
-		034069D02BBF32A4006762AA /* Now!.png in Resources */ = {isa = PBXBuildFile; fileRef = 034069CF2BBF32A3006762AA /* Now!.png */; };
 		49AEE64B2BB7198B008372A4 /* CommunityMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AEE64A2BB7198B008372A4 /* CommunityMapView.swift */; };
 		BF6076AF2BBF555B001C8291 /* HelpPgView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6076AE2BBF555A001C8291 /* HelpPgView.swift */; };
 		BF6076B12BBF5564001C8291 /* VolPgView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6076B02BBF5564001C8291 /* VolPgView.swift */; };
@@ -47,7 +46,6 @@
 
 /* Begin PBXFileReference section */
 		030D79D82BB74E2C00FA825E /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
-		034069CF2BBF32A3006762AA /* Now!.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Now!.png"; path = "../../Downloads/Now!.png"; sourceTree = "<group>"; };
 		034069D12BBF6E1B006762AA /* Now!.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Now!.png"; sourceTree = "<group>"; };
 		49AEE64A2BB7198B008372A4 /* CommunityMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityMapView.swift; sourceTree = "<group>"; };
 		BF6076AE2BBF555A001C8291 /* HelpPgView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpPgView.swift; sourceTree = "<group>"; };
@@ -99,7 +97,6 @@
 		EB5DED382BB665C90080DDD7 = {
 			isa = PBXGroup;
 			children = (
-				034069CF2BBF32A3006762AA /* Now!.png */,
 				EB5DED432BB665C90080DDD7 /* commYOUnityCares */,
 				EB5DED542BB665DA0080DDD7 /* commYOUnityCaresTests */,
 				EB5DED5E2BB665DA0080DDD7 /* commYOUnityCaresUITests */,
@@ -123,6 +120,7 @@
 				EB5DED442BB665C90080DDD7 /* commYOUnityCaresApp.swift */,
 				030D79D82BB74E2C00FA825E /* LogInView.swift */,
 				EB5DED462BB665C90080DDD7 /* ContentView.swift */,
+				034069D12BBF6E1B006762AA /* Now!.png */,
 				EB5DED6E2BB666AE0080DDD7 /* SideMenu.swift */,
 				EB5DED722BB667FC0080DDD7 /* SideMenuView.swift */,
 				EB5DED742BB670980080DDD7 /* SideMenuOptionModel.swift */,
@@ -134,7 +132,6 @@
 				EB5DED782BB671290080DDD7 /* SettingsView.swift */,
 				49AEE64A2BB7198B008372A4 /* CommunityMapView.swift */,
 				EB5DED482BB665D90080DDD7 /* Assets.xcassets */,
-				034069D12BBF6E1B006762AA /* Now!.png */,
 				EB5DED4A2BB665D90080DDD7 /* Preview Content */,
 			);
 			path = commYOUnityCares;
@@ -269,7 +266,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				034069D02BBF32A4006762AA /* Now!.png in Resources */,
 				EB5DED4C2BB665D90080DDD7 /* Preview Assets.xcassets in Resources */,
 				EB5DED492BB665D90080DDD7 /* Assets.xcassets in Resources */,
 			);

@@ -10,16 +10,15 @@ enum SideMenuOptionModel: Int, CaseIterable{
     case settings
     case profile
     case logout
-    case home
+    
     
     var title: String{
         switch self{
-        case .home:
-            return "Home"
+       
         case .profile:
             return "Profile"
         case .logout:
-            return "Logout"
+            return "Student Hub"
         case .settings:
             return "Settings"
         }
@@ -27,12 +26,10 @@ enum SideMenuOptionModel: Int, CaseIterable{
     
     var systemImageName: String{
         switch self{
-        case .home:
-            return "house"
         case .profile:
             return "person"
         case .logout:
-            return "rectangle.portrait.and.arrow.right"
+            return "pencil"
         case .settings:
             return "gear"
         }
