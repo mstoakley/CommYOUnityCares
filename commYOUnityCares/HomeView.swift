@@ -25,7 +25,9 @@ let posts = [
 
 struct HomeView: View {
     @State private var posts: [Post] = [
-        // Initial posts...
+        Post(content: "Just visited the Eiffel Tower!", image: Image("communityvol"), likes: 128),
+        Post(content: "Hello SwiftUI!", likes: 89),
+        Post(content: "Check out my new skateboard", image: Image("poster"), likes: 104),
     ]
     
     @State private var newPostContent = ""
