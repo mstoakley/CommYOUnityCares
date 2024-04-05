@@ -11,6 +11,7 @@ enum SideMenuOptionModel: Int, CaseIterable{
     case settings
     case profile
     case studenthub
+    case help
     
     
     var title: String{
@@ -22,6 +23,8 @@ enum SideMenuOptionModel: Int, CaseIterable{
             return "Student Hub"
         case .settings:
             return "Settings"
+        case .help:
+            return "Help"
         }
     }
     
@@ -33,6 +36,8 @@ enum SideMenuOptionModel: Int, CaseIterable{
             return "pencil"
         case .settings:
             return "gear"
+        case .help:
+            return "hand.raised"
         }
     }
 }

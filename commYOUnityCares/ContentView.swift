@@ -15,36 +15,29 @@ struct ContentView: View {
     var body: some View {
         TabView {
             VStack {
-                Text("Home")
-            }
-            .tabItem {
-                Image(systemName: "house")
-                Text("Home")
-            }
-            VStack {
                 CommunityMapView()
             }
             .tabItem {
                 Image(systemName: "map")
                 Text("Finder")
             }
-            
             VStack {
-                SplitPgView()
+                Text("Home")
             }
             .tabItem {
-                Image(systemName: "hands.raised")
-                Text("Help")
+                Image(systemName: "house")
+                Text("Home")
             }
             NavigationStack {
                 ZStack {
                     TabView(selection: $selectedTab) {
                         Text("Profile")
-                            .tag(2)
-                        Text("Student Hub")
                             .tag(1)
+                        Text("Student Hub")
+                            .tag(2)
                         SettingsView()
                             .tag(0)
+                        SplitPgView().tag(3)
                     }
                     SideMenuView(isShowing: $showMenu, selectedTab: $selectedTab)
                         .padding()
@@ -52,7 +45,7 @@ struct ContentView: View {
                 .toolbar(showMenu ? .hidden : .visible, for: .navigationBar)
                 .navigationBarTitleDisplayMode(.inline)
                 .toolbar {
-                    ToolbarItem(placement: .topBarTrailing) {
+                    ToolbarItem(placement: .topBarLeading) {
                         Button(action: {
                             showMenu.toggle()
                         }) {
