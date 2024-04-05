@@ -12,7 +12,7 @@ struct commYOUnityCaresApp: App {
     @AppStorage("isDarkModeEnabled") private var isDarkModeEnabled = false
         var body: some Scene {
             WindowGroup {
-                ContentView()
+            LogInView()
                     .environment(\.colorScheme, isDarkModeEnabled ? .dark : .light)
             }
         }

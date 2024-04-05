@@ -17,17 +17,17 @@ struct Post: Identifiable {
 
 
 let posts = [
-    Post(content: "Just visited the Eiffel Tower!", image: Image("communityvol"), likes: 128),
-    Post(content: "Hello SwiftUI!", likes: 89),
-    Post(content: "Check out my new skateboard", image: Image("poster"), likes: 104),
+    Post(content: "Made new friends at Keep Waller Green!", image: Image("communityvol"), likes: 128),
+    Post(content: "Hello CommYOUnity Cares!!!", likes: 89),
+    Post(content: "PV we need your help this Saturday!!", image: Image("poster"), likes: 104),
     // Add more posts here...
 ]
 
 struct HomeView: View {
     @State private var posts: [Post] = [
-        Post(content: "Just visited the Eiffel Tower!", image: Image("communityvol"), likes: 128),
-        Post(content: "Hello SwiftUI!", likes: 89),
-        Post(content: "Check out my new skateboard", image: Image("poster"), likes: 104),
+        Post(content: "Made new friends at Keep Waller Green!", image: Image("communityvol"), likes: 128),
+        Post(content: "Hello CommYOUnity Cares!!!", likes: 89),
+        Post(content: "PV we need your help this Saturday!!", image: Image("poster"), likes: 104),
     ]
     
     @State private var newPostContent = ""
@@ -59,8 +59,12 @@ struct HomeView: View {
                     Text(post.content)
                         .font(.body)
                     HStack {
-                        Button(action: {
-                            // Handle like button action here, e.g., incrementing likes
+                        Button(action: { func incrementLikes(for postId: UUID) {
+                            if let index = posts.firstIndex(where: { $0.id == postId }) {
+                                posts[index].likes += 1
+                            }
+                        }
+                         
                         }) {
                             Image(systemName: "heart")
                             Text("\(post.likes)")
