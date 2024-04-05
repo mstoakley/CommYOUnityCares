@@ -19,7 +19,7 @@ struct Post: Identifiable {
 let posts = [
     Post(content: "Just visited the Eiffel Tower!", image: Image("communityvol"), likes: 128),
     Post(content: "Hello SwiftUI!", likes: 89),
-    //Post(content: "Check out my new skateboard", image: "skateboard", likes: 104),
+    Post(content: "Check out my new skateboard", image: Image("poster"), likes: 104),
     // Add more posts here...
 ]
 
@@ -49,8 +49,8 @@ struct HomeView: View {
             // Posts List
             List(posts) { post in
                 VStack(alignment: .leading, spacing: 10) {
-                    if let imageName = post.image, !imageName.isEmpty {
-                        Image(imageName)
+                    if let image = post.image {
+                        image
                             .resizable()
                             .scaledToFit()
                     }
@@ -77,11 +77,13 @@ struct HomeView: View {
     }
 
     func addNewPost() {
-        let newPost = Post(content: newPostContent, image: newPostImageName.isEmpty ? nil : newPostImageName, likes: 0)
-        posts.insert(newPost, at: 0) // Inserts new post at the beginning of the list
-        newPostContent = "" // Clears the text field content
-        newPostImageName = "" // Clears the image name field
+        let image = newPostImageName.isEmpty ? nil : Image(newPostImageName)
+        let newPost = Post(content: newPostContent, image: image, likes: 0)
+        posts.insert(newPost, at: 0)
+        newPostContent = ""
+        newPostImageName = ""
     }
+
 }
 
 
