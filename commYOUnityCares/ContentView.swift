@@ -22,7 +22,7 @@ struct ContentView: View {
                 Text("Finder")
             }
             VStack {
-                Text("Home")
+                HomeView()
             }
             .tabItem {
                 Image(systemName: "house")
@@ -37,7 +37,8 @@ struct ContentView: View {
                             .tag(2)
                         SettingsView()
                             .tag(0)
-                        SplitPgView().tag(3)
+                        SplitPgView()
+                            .tag(3)
                     }
                     SideMenuView(isShowing: $showMenu, selectedTab: $selectedTab)
                         .padding()
