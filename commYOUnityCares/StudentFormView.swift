@@ -20,7 +20,7 @@ struct StudentFormView: View {
             VStack {
                 Spacer()
                 
-                Text("Fill out the form below to express your need for assistance:")
+                Text("Fill out the form below to inform your school of your need for assistance:")
                     .font(.headline)
                     .padding(.horizontal)
                 
@@ -41,7 +41,7 @@ struct StudentFormView: View {
                     Spacer()
                 }
                 
-                ForEach(0..<options.count) { index in
+                ForEach(0..<3) { index in
                     CheckboxField(
                         title: self.options[index],
                         isChecked: self.selectedOptions.contains(index)

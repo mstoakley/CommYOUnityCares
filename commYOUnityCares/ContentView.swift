@@ -10,17 +10,11 @@ import SwiftUI
 struct ContentView: View {
     @State private var showMenu = false
     @State private var selectedTab = 0
+    @State private var selectedItem = 1
     @State private var isLoggedIn = true
     
     var body: some View {
-        TabView {
-            VStack {
-                CommunityMapView()
-            }
-            .tabItem {
-                Image(systemName: "map")
-                Text("Finder")
-            }
+        TabView (selection: $selectedItem) {
             VStack {
                 HomeView()
             }
@@ -28,16 +22,23 @@ struct ContentView: View {
                 Image(systemName: "house")
                 Text("Home")
             }
+            VStack {
+                CommunityMapView()
+            }
+            .tabItem {
+                Image(systemName: "map")
+                Text("Finder")
+            }
             NavigationStack {
                 ZStack {
                     TabView(selection: $selectedTab) {
-                        Text("Profile")
+                        ProfileView()
+                            .tag(0)
+                        StudentFormView()
                             .tag(1)
-                        Text("Student Hub")
+                        SplitPgView()
                             .tag(2)
                         SettingsView()
-                            .tag(0)
-                        SplitPgView()
                             .tag(3)
                     }
                     SideMenuView(isShowing: $showMenu, selectedTab: $selectedTab)

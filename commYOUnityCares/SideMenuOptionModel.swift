@@ -7,11 +7,12 @@
 
 import Foundation
 enum SideMenuOptionModel: Int, CaseIterable{
- 
-    case settings
+    
     case profile
     case studenthub
     case help
+    case settings
+    
     
     
     var title: String{

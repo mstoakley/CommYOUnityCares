@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		030D79D92BB74E2C00FA825E /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030D79D82BB74E2C00FA825E /* LogInView.swift */; };
 		49AEE64B2BB7198B008372A4 /* CommunityMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AEE64A2BB7198B008372A4 /* CommunityMapView.swift */; };
+		49E0D8F32BBFE65A004140FF /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E0D8F22BBFE65A004140FF /* ProfileView.swift */; };
+		49E0D8F72BBFF142004140FF /* StudentFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E0D8F62BBFF142004140FF /* StudentFormView.swift */; };
 		BF6076AF2BBF555B001C8291 /* HelpPgView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6076AE2BBF555A001C8291 /* HelpPgView.swift */; };
 		BF6076B12BBF5564001C8291 /* VolPgView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6076B02BBF5564001C8291 /* VolPgView.swift */; };
 		BF6076B32BBF5576001C8291 /* SplitPgView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6076B22BBF5576001C8291 /* SplitPgView.swift */; };
@@ -47,8 +49,9 @@
 
 /* Begin PBXFileReference section */
 		030D79D82BB74E2C00FA825E /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
-		034069D12BBF6E1B006762AA /* Now!.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Now!.png"; sourceTree = "<group>"; };
 		49AEE64A2BB7198B008372A4 /* CommunityMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityMapView.swift; sourceTree = "<group>"; };
+		49E0D8F22BBFE65A004140FF /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		49E0D8F62BBFF142004140FF /* StudentFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentFormView.swift; sourceTree = "<group>"; };
 		BF6076AE2BBF555A001C8291 /* HelpPgView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpPgView.swift; sourceTree = "<group>"; };
 		BF6076B02BBF5564001C8291 /* VolPgView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VolPgView.swift; sourceTree = "<group>"; };
 		BF6076B22BBF5576001C8291 /* SplitPgView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitPgView.swift; sourceTree = "<group>"; };
@@ -121,7 +124,6 @@
 			children = (
 				EB5DED442BB665C90080DDD7 /* commYOUnityCaresApp.swift */,
 				030D79D82BB74E2C00FA825E /* LogInView.swift */,
-				034069D12BBF6E1B006762AA /* Now!.png */,
 				EB1B7F0C2BBFD454001A75D1 /* HomeView.swift */,
 				EB5DED462BB665C90080DDD7 /* ContentView.swift */,
 				EB5DED6E2BB666AE0080DDD7 /* SideMenu.swift */,
@@ -133,6 +135,8 @@
 				EB5DED702BB666E40080DDD7 /* SideMenuRowView.swift */,
 				EB5DED762BB670D00080DDD7 /* SideMenuHeaderView.swift */,
 				EB5DED782BB671290080DDD7 /* SettingsView.swift */,
+				49E0D8F22BBFE65A004140FF /* ProfileView.swift */,
+				49E0D8F62BBFF142004140FF /* StudentFormView.swift */,
 				49AEE64A2BB7198B008372A4 /* CommunityMapView.swift */,
 				EB5DED482BB665D90080DDD7 /* Assets.xcassets */,
 				EB5DED4A2BB665D90080DDD7 /* Preview Content */,
@@ -301,6 +305,7 @@
 				EB5DED792BB671290080DDD7 /* SettingsView.swift in Sources */,
 				EB5DED772BB670D00080DDD7 /* SideMenuHeaderView.swift in Sources */,
 				EB5DED712BB666E40080DDD7 /* SideMenuRowView.swift in Sources */,
+				49E0D8F72BBFF142004140FF /* StudentFormView.swift in Sources */,
 				EB5DED752BB670980080DDD7 /* SideMenuOptionModel.swift in Sources */,
 				BF6076B32BBF5576001C8291 /* SplitPgView.swift in Sources */,
 				EB5DED732BB667FC0080DDD7 /* SideMenuView.swift in Sources */,
@@ -308,6 +313,7 @@
 				BF6076AF2BBF555B001C8291 /* HelpPgView.swift in Sources */,
 				EB5DED472BB665C90080DDD7 /* ContentView.swift in Sources */,
 				EB5DED452BB665C90080DDD7 /* commYOUnityCaresApp.swift in Sources */,
+				49E0D8F32BBFE65A004140FF /* ProfileView.swift in Sources */,
 				49AEE64B2BB7198B008372A4 /* CommunityMapView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
