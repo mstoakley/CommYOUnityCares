@@ -7,6 +7,7 @@
 
 import Foundation
 enum SideMenuOptionModel: Int, CaseIterable{
+    case home
     case settings
     case profile
     case logout

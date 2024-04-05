@@ -47,24 +47,22 @@ struct ContentView: View {
                             Image(systemName: "line.3.horizontal")
                         })
                     }
-                    ToolbarItem(placement: .topBarTrailing){
-                        Button(action:{ logout() }) {
-                            Text("Logout")
-                        }
-                    }
-                }
+            }.tabItem {
+                Image(systemName: "house")
+                Text("Home")
             }
-            SettingsView().tabItem {
-                Image(systemName: "gear")
-                Text("Settings")}
-            
-            CommunityMapView().tabItem {
+            VStack{
+                CommunityMapView()
+            }.tabItem {
                 Image(systemName: "map")
                 Text("Finder")
             }
-            SplitPgView().tabItem {
-                Image(systemName: "hand")
-                Text("Help")}
+            VStack{
+                SplitPgView()
+            }.tabItem {
+                Image(systemName: "person.3")
+                Text("Help")
+            }
         }
     }
     func logout() {
