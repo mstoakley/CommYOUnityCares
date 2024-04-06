@@ -29,7 +29,7 @@ struct LogInView: View {
             Text("CommYOUnity Cares")
                 .font(.largeTitle)
                 .fontWeight(.heavy)
-                .foregroundColor(Color(red: 255/255, green: 255/255, blue: 255/255))
+                .foregroundColor(Color(.white))
             
             Spacer()
             Image("Now")
@@ -38,6 +38,7 @@ struct LogInView: View {
             Spacer()
             
             Text("Username")
+                .foregroundColor(Color(.white))
             
             
             
@@ -48,6 +49,7 @@ struct LogInView: View {
                 .padding()
             
             Text("Password")
+                .foregroundColor(Color(.white))
             
             TextField("Enter password", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
@@ -62,11 +64,11 @@ struct LogInView: View {
             
             .font(.title)
             .fontWeight(.semibold)
-            .foregroundColor(Color(red: 242/255, green: 242/255, blue: 248/255))
+            .foregroundColor(Color(.white))
             //Spacer()
             Spacer()
         }
-        .background(Color(red: 19/255, green: 137/255, blue: 205/255, opacity: 0.8))
+        .background(Color(.blue))
     }
 }
 

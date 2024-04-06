@@ -19,9 +19,10 @@ struct Post: Identifiable {
 
 struct HomeView: View {
     @State private var posts: [Post] = [
-        Post(icon: Image(systemName: "pin") , title: "Welcome to the CommYOUnity", content: "Hello CommYOUnity Cares!!! Welcome to our app where our goal is to spread the message that your Community cares about YOU by allowing people the oppurtunity to help out where they can and speak up when they need it!", likes: 89, comments: 7),
-        Post(title: "Keep Waller Green", content: "Made new friends at Keep Waller Green! Come out next weekend to the Waller County Community Center.", image: Image("communityvol"), likes: 128, comments: 4),
-        Post(content: "PV we need your help this Saturday!!", image: Image("poster"), likes: 104, comments: 2),
+        Post(icon: Image(systemName: "pin") , title: "Welcome to the CommYOUnity", content: "Hello CommYOUnity Cares!! Welcome to our app where our goal is to spread the message that your Community cares about YOU by allowing people the oppurtunity to help out where they can and speak up when they need it!", likes: 13, comments: 7),
+        Post(title: "Keep Waller Green", content: "Made new friends at Keep Waller Green! Come out next weekend to the Waller County Community Center.", image: Image("communityvol"), likes: 8, comments: 0),
+        Post(title: "Looking For A Food Bank", content: "Does anyone know where I can find a food bank in the Prairie View Area?", likes: 17, comments: 2),
+        Post(title: "Campus Cleanup", content: "PV we need your help this Saturday. Come out and help clean up your campus!", image: Image("poster"), likes: 32, comments: 11),
     ]
     
     @State private var showingNewPostView = false // To control the presentation of the NewPostView
@@ -73,7 +74,7 @@ struct HomeView: View {
                 .shadow(radius: 5)
             }
             .listStyle(PlainListStyle())
-            .navigationBarTitle("Posts", displayMode: .inline)
+            .navigationBarTitle("Home", displayMode: .inline)
             .navigationBarItems(leading: Button(action: {
                 showingNewPostView = true
             }) {
